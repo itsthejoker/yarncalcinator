@@ -105,12 +105,14 @@
         function updateRequestedUnitType(el) {
             displayEl = document.getElementById("requestedSkeinLengthDescription");
             displayEl.innerText = `${el.value} long`;
+            updateSkeinCount()
         }
 
         function updateBuyingUnitType(el) {
             // yes I could merge these, but it's not worth the effort right now
             displayEl = document.getElementById("buyingSkeinLengthDescription");
             displayEl.innerText = `${el.value} long`;
+            updateSkeinCount()
         }
 
         function setSkeinCount(value) {
